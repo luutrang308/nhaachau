@@ -25,6 +25,9 @@
     <div class="container">
         <div class="row">
             <div class="top_header">
+                <div class="logo_mobi">
+                    <a href="" title="" class="logo_box"> <img src="./assets/img/logo.png" alt=""> </a>
+                </div>
                 <div class="search_box">
                     <p>
                         <img src="./assets/img/search.png" alt="">
@@ -40,14 +43,20 @@
                     <a href="" class="lang_default" title=""> en </a>
                     <a href="" class="lang_default active" title=""> vi </a>
                 </div>
+
+                <div class="icon_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div class="header_main">
-                <ul class="main_menu">
+                <ul class="main_menu menu_tab">
                     <li>
                         <a href="" title=""> <img src="./assets/img/home.png" alt=""> </a>
                     </li>
-                    <li>
+                    <li class="hightline">
                         <a href="" title=""> GIỚI THIỆU </a>
                         <ul class="list_submenu">
                             <li>
@@ -70,7 +79,7 @@
                     <li>
                         <a href="" title=""> DỰ ÁN NỘI THẤT </a>
                     </li>
-                    <li>
+                    <li class="hightline">
                         <a href="" title=""> DỰ ÁN KIẾN TRÚC </a>
                         <ul class="list_submenu">
                             <li>
@@ -111,7 +120,7 @@
     </div>
 </div>
 
-<div class="section_slider">
+<div class="section_slider wow fadeInUp" data-wow-delay="400ms">
     <div class="slider_banner">
         <div class="item">
             <img src="./assets/img/banner1.png" alt="">
@@ -138,7 +147,7 @@
 <div class="section_aboutus">
     <div class="container">
         <div class="row">
-            <div class="item_aboutus">
+            <div class="item_aboutus wow fadeInLeft" data-wow-delay="400ms">
                 <div class="title_basic">
                     <h2><span>VỀ CHÚNG TÔI</span></h2>
                     <p>Kiến trúc Nhà Á Châu là công ty thiết kế biệt thự và thi công hoàn thiện nội ngoại thất các công trình theo phong cách cổ điển, tân cổ điển châu Âu cho đến những phong cách hiện đại mang nét đẹp á đông. Khát khao của chúng tôi là xây dựng lên những công trình sang trọng đẳng cấp theo các phong cách phù hợp với không gian, thời tiết, vật liệu và khí hậu Việt Nam.</p>
@@ -151,7 +160,7 @@
                     </div>
                     <div class="col_counter">
                         <div class="counter-number" id="num-2">0+</div>
-                        <div class="counter-title">  Dự án đã hoàn thành</div>
+                        <div class="counter-title"> Công trình thực tế</div>
                     </div>
                     <div class="col_counter">
                         <div class="counter-number" id="num-3">0+</div>
@@ -161,31 +170,1195 @@
 
                 <button class="btn_timhieuthem"> Tìm hiểu thêm <img src="./assets/img/muiten.png" alt=""> </button>
             </div>
-        </div>
 
-        <div class="item_video">
-            
+            <div class="item_video wow fadeInRight" data-wow-delay="400ms">
+                <div class="video_main">
+                    <div class="box_video">
+                        <img src="./assets/img/video.png" alt="">
+                        <span class="play_video"> <img src="./assets/img/playvideo.png" alt=""> </span>
+                    </div>
+                    <div class="item_img">
+                        <img src="./assets/img/img.png" alt="">
+                    </div>
+                    <div class="item_img">
+                        <img src="./assets/img/img1.png" alt="">
+                    </div>
+                    <div class="item_img">
+                        <img src="./assets/img/img2.png" alt="">
+                    </div>
+                    <div class="item_img">
+                        <img src="./assets/img/img3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="close_btn">
+                        X
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ekshCq8PrII" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
+<div class="section_service">
+    <div class="background_element">
+        <img src="./assets/img/bg1.png" alt="">
+    </div>
 
+    <div class="element_service">
+        <div class="container">
+            <div class="row">
+                <div class="title_light wow fadeInUp" data-wow-delay="400ms">
+                    <h2><span>DỊCH VỤ</span></h2>
+                </div>
 
+                <div class="box_service">
+                    <div class="item wow fadeInUp" data-wow-delay="450ms">
+                        <div class="img">
+                            <img src="./assets/img/i1.png" alt="">
+                            <img src="./assets/img/i11.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Tư vấn thiết kế - xây dựng</p>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="550ms">
+                        <div class="img">
+                            <img src="./assets/img/i2.png" alt="">
+                            <img src="./assets/img/i22.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Tư vấn hợp đồng</p>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="650ms">
+                        <div class="img">
+                            <img src="./assets/img/i3.png" alt="">
+                            <img src="./assets/img/i33.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Thiết kế kiến trúc</p>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="750ms">
+                        <div class="img">
+                            <img src="./assets/img/i4.png" alt="">
+                            <img src="./assets/img/i44.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Thiết kế nội thất</p>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="850ms">
+                        <div class="img">
+                            <img src="./assets/img/i5.png" alt="">
+                            <img src="./assets/img/i55.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Giám sát thi công</p>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay="950ms">
+                        <div class="img">
+                            <img src="./assets/img/i6.png" alt="">
+                            <img src="./assets/img/i66.png" alt="" class="img_hover">
+                        </div>
+                        <div class="content">
+                            <p>Bàn giao “chìa khóa trao tay”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="section_news section_list_news">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>+9999 MẪU BIỆT THỰ ĐẸP</span></h2>
+            </div>
 
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
 
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news section_list_news_nobg">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>BIỆT THỰ 2 TẦNG</span></h2>
+            </div>
+
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news section_list_news_bglight">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>BIỆT THỰ 3 TẦNG</span></h2>
+            </div>
+
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news section_list_news_bttcd">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>BIỆT THỰ TÂN CỔ ĐIỂN</span></h2>
+            </div>
+
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news section_list_news_bglight">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>LÂU ĐÀI - DINH THỰ</span></h2>
+            </div>
+
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news section_list_news_nt">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>NỘI THẤT</span></h2>
+            </div>
+
+            <div class="element_news">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item_news">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </a>
+
+                        <div class="title">
+                            <a href="" title="">Thiết kế biệt thự cổ điển 3 tầng đẹp nhất Hưng Yên – BTAC 5036</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_xemtatca wow fadeInUp" data-wow-delay="400ms"> Xem tất cả <img src="./assets/img/muiten.png" alt=""> </button>
+        </div>
+    </div>
+</div>
+
+<div class="section_news_video">
+    <div class="container">
+        <div class="row">
+            <div class="element_news_left">
+                <div class="title_basic wow fadeInUp" data-wow-delay="400ms">
+                    <h2><span>TIN TỨC</span></h2>
+                </div>
+
+                <div class="box_news_inline wow fadeInUp" data-wow-delay="400ms">
+                    <div class="item">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/im1.png" alt="">
+                        </a>
+
+                        <div class="content">
+                            <a href="" title="">05 đặc trưng thiết Tổng hợp mẫu thiết kế biệt thự có đài phun nước đẹp nhất 2021 kiến trúc kiểu Pháp</a>
+                            <p>Ngày nay, đài phun nước không chỉ được đặt ở những nơi công cộng mà , đã có mặt tại sân vườn của nhiều...</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/im2.png" alt="">
+                        </a>
+
+                        <div class="content">
+                            <a href="" title="">05 đặc trưng thiết Tổng hợp mẫu thiết kế biệt thự có đài phun nước đẹp nhất 2021 kiến trúc kiểu Pháp</a>
+                            <p>Ngày nay, đài phun nước không chỉ được đặt ở những nơi công cộng mà , đã có mặt tại sân vườn của nhiều...</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/im3.png" alt="">
+                        </a>
+
+                        <div class="content">
+                            <a href="" title="">05 đặc trưng thiết Tổng hợp mẫu thiết kế biệt thự có đài phun nước đẹp nhất 2021 kiến trúc kiểu Pháp</a>
+                            <p>Ngày nay, đài phun nước không chỉ được đặt ở những nơi công cộng mà , đã có mặt tại sân vườn của nhiều...</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="" title="" class="img">
+                            <img src="./assets/img/im4.png" alt="">
+                        </a>
+
+                        <div class="content">
+                            <a href="" title="">05 đặc trưng thiết Tổng hợp mẫu thiết kế biệt thự có đài phun nước đẹp nhất 2021 kiến trúc kiểu Pháp</a>
+                            <p>Ngày nay, đài phun nước không chỉ được đặt ở những nơi công cộng mà , đã có mặt tại sân vườn của nhiều...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="element_video_right">
+                <div class="title_basic wow fadeInUp" data-wow-delay="400ms">
+                    <h2><span>VIDEO DỰ ÁN</span></h2>
+                </div>
+
+                <div class="element_slider_video wow fadeInUp" data-wow-delay="400ms">
+                    <div class="slider_video_for">
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh1.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh2.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh3.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh4.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh5.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh6.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh7.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_video_for">
+                            <a href="https://www.youtube.com/watch?v=ekshCq8PrII&t=4s" class="img" data-fancybox="gallery">
+                                <img src="./assets/img/anh8.png" alt="">
+                                <div class="play_run circle">
+                                    <span><img src="./assets/img/play.png"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider_video_nav">
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh1.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh2.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh3.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh4.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh5.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh6.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh7.png" alt="">
+                        </div>
+                        <div class="item_img_video">
+                            <img src="./assets/img/anh8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</span></h2>
+            </div>
+
+            <div class="element_testimonial wow fadeInUp" data-wow-delay="400ms">
+                <div class="item_testi">
+                    <div class="img">
+                        <img src="./assets/img/test1.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <img src="./assets/img/ghichu.png" alt="">
+                        <div class="name">
+                            <h2>Nguyen Van A</h2>
+                            <p>CEO ACB Group</p>
+                        </div>
+
+                        <div class="text">
+                            <p>Tôi hoàn toàn hài lòng với quy trình tư vấn, thiết kế và thi công của công ty Nhà Á Châu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_testi">
+                    <div class="img">
+                        <img src="./assets/img/test1.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="name">
+                            <h2>Nguyen Van A</h2>
+                            <p>CEO ACB Group</p>
+                        </div>
+
+                        <div class="text">
+                            <img src="./assets/img/ghichu.png" alt="">
+                            <p>Tôi hoàn toàn hài lòng với quy trình tư vấn, thiết kế và thi công của công ty Nhà Á Châu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_testi">
+                    <div class="img">
+                        <img src="./assets/img/test1.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="name">
+                            <h2>Nguyen Van A</h2>
+                            <p>CEO ACB Group</p>
+                        </div>
+
+                        <div class="text">
+                            <img src="./assets/img/ghichu.png" alt="">
+                            <p>Tôi hoàn toàn hài lòng với quy trình tư vấn, thiết kế và thi công của công ty Nhà Á Châu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_partner">
+    <div class="container">
+        <div class="row">
+            <div class="title_black wow fadeInUp" data-wow-delay="400ms">
+                <h2><span>ĐỐI TÁC</span></h2>
+            </div>
+
+            <div class="slider_partner wow fadeInUp" data-wow-delay="400ms">
+                <div class="item">
+                    <img src="./assets/img/p1.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p2.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p3.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p4.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p5.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p6.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/p4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_form">
+    <div class="container">
+        <div class="row">
+            <div class="element_form wow fadeInUp" data-wow-delay="400ms">
+                <div class="title_black">
+                    <h2><span>ĐĂNG KÝ - TƯ VẤN</span></h2>
+                    <p>Xin vui lòng để lại Họ - Tên và số điện thoại, chúng tôi sẽ cập nhật những mẫu thiết kế mới đẹp nhất của Nhà Á Châu cho bạn.</p>
+                </div>
+
+                <div class="form">
+                    <form>
+                        <span>
+                            <img src="./assets/img/user.png" alt="">
+                            <input type="text" name="" placeholder="Họ và tên">
+                        </span>
+                        <span>
+                            <img src="./assets/img/phone.png" alt="">
+                            <input type="text" name="" placeholder="Số điện thoại">
+                        </span>
+                        <span>
+                            <img src="./assets/img/diachi.png" alt="">
+                            <input type="text" name="" placeholder="Địa chỉ">
+                        </span>
+                        <span>
+                            <img src="./assets/img/hoidap.png" alt="">
+                            <input type="text" name="" placeholder="Số tầng, diện tích xây dựng">
+                        </span>
+                        <button class="btn_dangki">
+                            Đăng kí
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_footer wow fadeInUp" data-wow-delay="400ms">
+    <div class="container">
+        <div class="row">
+            <div class="footer_item">
+                <div class="img_logo">
+                    <img src="./assets/img/logoft.png" alt="">
+                </div>
+            </div>
+            <div class="footer_item">
+                <ul class="nav nav-tabs nav_tab_ft">
+                    <li class="active"><a data-toggle="tab" href="#address1">VĂN PHÒNG THIẾT KẾ</a></li>
+                    <li><a data-toggle="tab" href="#address2">XƯỞNG SẢN XUẤT ĐỒ GỖ:</a></li>
+                </ul>
+
+                <div class="tab-content tab_content_ft">
+                    <div id="address1" class="tab-pane fade in active">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/dc.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>VP1: Tầng 8, số 77 Khuất Duy Tiến, Thanh Xuân, Hà Nội</p>
+                                <p>VP2: G2706 The manor officetel, 91 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh</p>
+                                <p>VP2: 169 Huyền Trân Công Chúa, Phường 8, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/sdt.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>0967.83.83.95 - 0862.85.85.95</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/email.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>kientrucnhaachau@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a href="" title=""><img src="./assets/img/fb.png" alt=""></a>
+                            <a href="" title=""><img src="./assets/img/t.png" alt=""></a>
+                            <a href="" title=""><img src="./assets/img/y.png" alt=""></a>
+                            <a href="" title=""><img src="./assets/img/i.png" alt=""></a>
+                            <a href="" title=""><img src="./assets/img/in.png" alt=""></a>
+                            <a href="" title=""><img src="./assets/img/g.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="address2" class="tab-pane fade">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/dc.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>VP1: Tầng 8, số 77 Khuất Duy Tiến, Thanh Xuân, Hà Nội</p>
+                                <p>VP2: G2706 The manor officetel, 91 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh</p>
+                                <p>VP2: 169 Huyền Trân Công Chúa, Phường 8, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/sdt.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>0967.83.83.95 - 0862.85.85.95</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="img">
+                                <img src="./assets/img/email.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>kientrucnhaachau@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_item">
+                <h3>DỊCH VỤ</h3>
+                <ul>
+                    <li> <a href="" title="">Thiết kế biệt thự 2 tầng </a> </li>
+                    <li> <a href="" title="">Thiết kế biệt thự 3 tầng </a> </li>
+                    <li> <a href="" title="">Thiết kế biệt thự Tân Cổ Điển </a> </li>
+                    <li> <a href="" title="">Thiết kế biệt thự Cổ Điển </a> </li>
+                    <li> <a href="" title="">Thiết kế biệt thự hiện đại </a> </li>
+                    <li> <a href="" title="">Thiết kế lâu đài - dinh thự </a> </li>
+                    <li> <a href="" title="">Thiết kế Trụ sở - khách sạn </a> </li>
+                    <li> <a href="" title="">Thiết kế Karaoke - Bar - Cafe </a> </li>
+                    <li> <a href="" title="">Thiết kế nội thất </a> </li>
+                    <li> <a href="" title="">Thi công trọn gói </a> </li>
+                </ul>
+            </div>
+
+            <div class="footer_item">
+                <h3>FANPAGE</h3>
+                <div class="fanpage">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkientrucnhaachau&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+            <div class="footer_item copyrighter_item">
+                <p>Copyright © 2021 Nha A Chau All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_link">
+    <a href="#" class="circle zalo-btn"><img src="./assets/img/tphone.png" alt=""></a>
+    <a href="#" class="circle zalo-btn"><img src="./assets/img/tmess.png" alt=""></a>
+    <a href="#" class="circle zalo-btn"><img src="./assets/img/tface.png" alt=""></a>
+    <a href="#" class="circle zalo-btn"><img src="./assets/img/tza.png" alt=""></a>
+    <a href="#" class="circle zalo-btn"><img src="./assets/img/tins.png" alt=""></a>
+</div>
+<a href="#" class="top_up"><img src="./assets/img/top.png" alt=""></a>
 
 
 
