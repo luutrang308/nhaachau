@@ -227,6 +227,23 @@ a:hover {
   text-transform: uppercase;
   padding: 15px;
 }
+.header_main .main_menu li.active_list {
+  position: relative;
+}
+.header_main .main_menu li.active_list:before {
+  position: absolute;
+  content: "";
+  left: 39%;
+  bottom: -6px;
+  width: 5px;
+  height: 5px;
+  border-top: 5px solid #E8CFA0;
+  border-right: 5px solid #E8CFA0;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transform: rotate(-45deg);
+}
+
 .slider_banner {
   overflow: hidden;
 }
@@ -285,23 +302,23 @@ a:hover {
   color: #fff;
 }
 
-.section_slider {
-  position: relative;
-}
-.section_slider:before {
-  position: absolute;
-  left: 375px;
-  top: -3px;
-  content: "";
-  width: 15px;
-  height: 15px;
-  border-top: 20px solid #E8CFA0;
-  border-right: 20px solid #E8CFA0;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid transparent;
-  transform: rotate(-45deg);
-}
+/*.section_slider {
 
+	position: relative;
+	&:before {
+		position: absolute;
+	    left: 375px;
+	    top: -3px;
+	    content: "";
+	    width: 15px;
+	    height: 15px;
+	    border-top: 20px solid #E8CFA0;
+	    border-right: 20px solid #E8CFA0;
+	    border-bottom: 8px solid transparent;
+	    border-left: 8px solid transparent;
+	    transform: rotate(-45deg);
+	}
+}*/
 .btn_xemchitiet {
   display: flex;
   align-items: center;
