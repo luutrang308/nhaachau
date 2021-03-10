@@ -171,6 +171,12 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
+  $('.footer_item_mobi .mobi_tab .item').click(function(event) {
+    if ($('.mobi_tab').hasClass('footer_mobi_click')) {
+      $('.footer_item_mobi .mobi_tab .item').not($(this)).removeClass('active');
+    }
+    $(this).toggleClass('active');
+  });
 
   /*
 
