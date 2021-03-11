@@ -63,6 +63,9 @@
   .top_up {
     right: 15px;
   }
+  .countdown_about .col_counter {
+    width: 32%;
+  }
 }
 
 /* 1024 */
@@ -97,6 +100,13 @@
 
 /* max 992 */
 @media screen and (max-width: 992px) {
+  .element_news {
+    margin: 30px 0 0 0;
+  }
+  .btn_xemtatca {
+    width: 145px;
+    height: 40px;
+  }
   .section_footer {
     display: none;
   }

@@ -330,7 +330,7 @@ a:hover {
   font-size: 14.4px;
   line-height: 17px;
   color: #FFFFFF;
-  width: 146px;
+  width: 172px;
   height: 48px;
   background: #E22121;
   border-radius: 4.5px;
@@ -354,7 +354,7 @@ a:hover {
   font-size: 14.4px;
   line-height: 17px;
   color: #FFFFFF;
-  width: 146px;
+  width: 172px;
   height: 48px;
   background: #E22121;
   border-radius: 4.5px;
@@ -378,7 +378,7 @@ a:hover {
   font-size: 14.4px;
   line-height: 17px;
   color: #FFFFFF;
-  width: 146px;
+  width: 172px;
   height: 48px;
   background: #E22121;
   border-radius: 4.5px;
@@ -394,7 +394,7 @@ a:hover {
 .item_aboutus {
   width: 50%;
   overflow: hidden;
-  padding-right: 80px;
+  padding-right: 100px;
 }
 .item_aboutus .title_basic p {
   margin-top: 30px;
@@ -504,6 +504,10 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
+}
+.item_video .item_img:hover > img {
+  transform: scale(1.2);
 }
 .item_video .item_img:nth-child(2) {
   top: 50px;
@@ -513,6 +517,7 @@ a:hover {
   height: 170px;
   overflow: hidden;
   z-index: 0;
+  transition: 0.5s;
 }
 .item_video .item_img:nth-child(3) {
   right: 55px;
@@ -521,6 +526,7 @@ a:hover {
   width: 174px;
   height: 109px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .item_video .item_img:nth-child(4) {
   bottom: 30px;
@@ -529,6 +535,7 @@ a:hover {
   width: 169px;
   height: 106px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .item_video .item_img:nth-child(5) {
   bottom: 30px;
@@ -538,8 +545,101 @@ a:hover {
   height: 175px;
   overflow: hidden;
   z-index: 4;
+  transition: 0.5s;
+}
+.item_video .item_img.change-position {
+  animation-name: rainbow;
+  animation-duration: 4s;
+  margin: auto;
+}
+.item_video .item_img.change-position1 {
+  animation-name: rainbow1;
+  animation-duration: 4s;
+  margin: auto;
+}
+.item_video .item_img.change-position2 {
+  animation-name: rainbow2;
+  animation-duration: 4s;
+  margin: auto;
+}
+.item_video .item_img.change-position3 {
+  animation-name: rainbow3;
+  animation-duration: 4s;
+  margin: auto;
 }
 
+@keyframes rainbow {
+  0% {
+    top: 0px;
+    left: 50%;
+  }
+  50% {
+    right: 25px;
+    top: -20px;
+  }
+  70% {
+    right: 100%;
+    top: 40px;
+  }
+  100% {
+    top: 50px;
+    left: -45px;
+  }
+}
+@keyframes rainbow1 {
+  0% {
+    top: 0px;
+    right: 50%;
+  }
+  30% {
+    right: 25px;
+    top: 10px;
+  }
+  60% {
+    right: 40px;
+    top: 15px;
+  }
+  100% {
+    right: 55px;
+    top: 20px;
+  }
+}
+@keyframes rainbow2 {
+  0% {
+    bottom: 0px;
+    left: 100%;
+  }
+  40% {
+    right: 50%;
+    bottom: -20px;
+  }
+  80% {
+    right: 80%;
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+    left: 60px;
+  }
+}
+@keyframes rainbow3 {
+  0% {
+    bottom: 0px;
+    right: 100%;
+  }
+  20% {
+    right: 50%;
+    bottom: -20px;
+  }
+  80% {
+    right: 40px;
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+    right: -30px;
+  }
+}
 .section_aboutus {
   /*background-image: url(./../img/bg.png);
   background-size: cover;
@@ -595,7 +695,7 @@ a:hover {
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 68px;
   line-height: 107px;
   color: #008B5C;
 }
@@ -662,11 +762,17 @@ a:hover {
   text-align: center;
   width: calc(100% / 6);
 }
+.box_service .item:hover {
+  cursor: pointer;
+}
 .box_service .item:hover .img img {
   display: none;
 }
 .box_service .item:hover .img img.img_hover {
   display: block;
+}
+.box_service .item:hover .content p {
+  color: #fbe3b0;
 }
 .box_service .item .img {
   width: 110px;
@@ -698,6 +804,7 @@ a:hover {
   color: #FFFFFF;
   margin: 0;
   padding: 0 25px;
+  transition: 0.5s;
 }
 
 .title_black h2 {
@@ -725,7 +832,7 @@ a:hover {
 }
 
 .element_news {
-  margin: 45px 0 0 0;
+  margin: 45px -15px 0 -15px;
   display: inline-block;
 }
 .element_news .item_news {
@@ -759,7 +866,6 @@ a:hover {
   transform: scale(1.2);
 }
 .element_news .item_news:hover .title a {
-  color: #e42222;
   font-weight: bold;
 }
 
@@ -782,27 +888,16 @@ a:hover {
 }
 
 .section_list_news_bttcd {
-  background-image: url(./../img/bg3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #FAFAFA;
 }
 
 .section_list_news_nt {
-  background-image: url(./../img/bg4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #FAFAFA;
 }
 
 .section_news_video {
   padding: 60px 0 90px 0;
   position: relative;
-}
-.section_news_video:before {
-  position: absolute;
-  content: url(./../img/bg5.png);
-  top: 40%;
-  left: 15px;
-  transform: translate(-50%, 0);
 }
 .section_news_video .row {
   display: flex;
@@ -947,7 +1042,6 @@ a:hover {
 
 .circle {
   border-radius: 50%;
-  background-color: #EC8C1D;
   transition: height 0.25s ease, width 0.25s ease;
   transform: translate(-50%, -50%);
   z-index: 6;
@@ -962,7 +1056,6 @@ a:hover {
   left: 0px;
   border-radius: 50%;
   border: 1px solid #ec8c1d85;
-  background: #ec8c1d30;
   animation: ripple 2.5s linear infinite;
 }
 .circle:after {
@@ -975,7 +1068,6 @@ a:hover {
   left: 0;
   border-radius: 50%;
   border: 1px solid #d28c59db;
-  background: #d28c59db;
   z-index: -1;
   animation: ripple 2s linear 1s infinite;
 }
@@ -1225,7 +1317,7 @@ a:hover {
   width: 45%;
 }
 .section_footer .row .footer_item:nth-child(3) {
-  width: 25%;
+  width: 18%;
 }
 .section_footer .row .footer_item:nth-child(4) {
   width: 30%;
@@ -1246,6 +1338,9 @@ a:hover {
 .section_footer .row .footer_item .nav_tab_ft li {
   margin-right: 25px;
 }
+.section_footer .row .footer_item .nav_tab_ft li:focus {
+  outline: 0;
+}
 .section_footer .row .footer_item .nav_tab_ft li a {
   font-family: Lato;
   font-style: normal;
@@ -1254,7 +1349,6 @@ a:hover {
   line-height: 17px;
   opacity: 0.5;
   color: #F1F1F1;
-  transition: 0.5s;
   padding: 8px 0;
 }
 .section_footer .row .footer_item .nav_tab_ft li a:before {
@@ -1306,7 +1400,7 @@ a:hover {
   list-style: none;
 }
 .section_footer .row .footer_item ul li {
-  margin: 8px 0 7px 0;
+  margin: 12px 0 10px 0;
 }
 .section_footer .row .footer_item ul li a {
   font-family: Lato;
@@ -1337,6 +1431,15 @@ a:hover {
 .section_footer .row .footer_item ul li:hover a:before {
   left: 5px;
   background: #fbe3b0;
+}
+.section_footer .row .footer_item ul.nav_tab_ft li a {
+  border: 1px solid transparent;
+}
+.section_footer .row .footer_item ul.nav_tab_ft li:hover:focus {
+  outline: 0;
+}
+.section_footer .row .footer_item ul.nav_tab_ft li:hover a {
+  padding-left: 0;
 }
 .section_footer .row .footer_item .fanpage {
   height: 180px;
