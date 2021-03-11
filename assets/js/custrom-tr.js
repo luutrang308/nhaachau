@@ -41,7 +41,7 @@ $(document).ready(function() {
     { number: 10 },
     {
       duration: 4000,
-      postfix: ""
+      postfix: "+"
     }
   );
 
