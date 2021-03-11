@@ -44,7 +44,7 @@
     height: 370px;
   }
   .top_up {
-    right: 30px;
+    right: 10px;
   }
   .section_slider:before {
     left: 106px;
@@ -61,7 +61,7 @@
     right: 0;
   }
   .top_up {
-    right: 15px;
+    right: 0px;
   }
   .countdown_about .col_counter {
     width: 32%;
@@ -86,6 +86,18 @@
   .slider_banner .item .content h2 {
     font-size: 80px;
   }
+  .section_service .element_service {
+    position: inherit;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background: #004F34;
+    padding: 50px 0;
+    background-image: url(./../img/bg1.png);
+  }
+  .section_service .background_element {
+    display: none;
+  }
 }
 
 /* min 992 */
@@ -95,6 +107,7 @@
   }
   .item_link {
     margin-bottom: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -432,7 +445,7 @@
     font-size: 18px;
   }
   .top_up {
-    right: 14px;
+    right: 0px;
     bottom: 15px;
     width: 30px;
     height: 30px;
