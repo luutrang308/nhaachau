@@ -40,7 +40,7 @@ $(document).ready(function() {
   $("#num-1").animate(
     { number: 10 },
     {
-      duration: 2000,
+      duration: 4000,
       postfix: ""
     }
   );
@@ -50,7 +50,7 @@ $(document).ready(function() {
   .animate(
     { number: 1000 },
     {
-      duration: 1500,
+      duration: 4000,
       postfix: "+"
     }
   );
@@ -60,7 +60,7 @@ $(document).ready(function() {
     .animate(
     { number: 100 },
     {
-        duration: 2000,
+        duration: 4000,
         postfix: "+"
     }
   );
