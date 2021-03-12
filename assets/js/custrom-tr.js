@@ -22,6 +22,15 @@ $(document).ready(function() {
     lazyLoad: 'ondemand',
   });
 
+  /*$('.itemlist').slick({
+    dots: true,
+    slidesToShow: 1,
+    autoplay: false,
+    autoplaySpeed: 1000,
+    arrows: false,
+    lazyLoad: 'ondemand',
+  });*/
+
   $.Tween.propHooks.number = {
     get: function(tween) {
       var num = tween.elem.innerHTML.replace(/^[^\d-]+/, "");
@@ -59,6 +68,15 @@ $(document).ready(function() {
   .delay(0)
     .animate(
     { number: 100 },
+    {
+        duration: 4000,
+        postfix: "+"
+    }
+  );
+    $("#num-4")
+  .delay(0)
+    .animate(
+    { number: 56 },
     {
         duration: 4000,
         postfix: "+"
@@ -163,7 +181,20 @@ $(document).ready(function() {
     if ($('.main_menu').hasClass('menu_tab')) {
       $('.main_menu li.hightline').not($(this)).removeClass('active');
     }
-    $(this).toggleClass('active');
+    $(this).addClass('active');
+  });
+
+  $('li.hightline .list_submenu li').click(function(event) {
+    if ($('li.hightline').hasClass('active')) {
+      $('li.hightline .list_submenu li').not($(this)).removeClass('active');
+    }
+    $(this).addClass('active_hightline');
+  });
+
+  $('.header_main .main_menu > li.hightline').click(function(event) {
+    if ($('li.hightline').hasClass('active')) {
+      $(this).not($(this)).removeClass('active');
+    }
   });
 
   $('.icon_menu').click(function(){
