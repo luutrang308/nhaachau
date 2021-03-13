@@ -102,6 +102,25 @@ $(document).ready(function() {
     nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
   });
 
+  $('.slider_img_for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.slider_img_nav',
+    arrows: true,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/l.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/r.png' alt=''></button>",
+  });
+  $('.slider_img_nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider_img_for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
+  });
+
   $('.element_testimonial').slick({
     dots: false,
     slidesToShow: 2,

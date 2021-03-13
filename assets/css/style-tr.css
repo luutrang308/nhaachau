@@ -3237,3 +3237,53 @@ a:hover {
 .section_popup .element_popup .form_popup form .btn_dangkipopup:focus {
   outline: 0;
 }
+
+.section_detail_project .element_detail {
+  width: 66%;
+  float: left;
+}
+.section_detail_project .element_detail .slider_detail {
+  width: 100%;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for {
+  width: 100%;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .item_img_for {
+  width: 100%;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .item_img_for .img {
+  width: 100%;
+  height: 445px;
+  overflow: hidden;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .item_img_for .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .slick-prev:before {
+  display: none;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .slick-next {
+  right: 17px;
+  z-index: 1;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_for .slick-next:before {
+  display: none;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_nav .item_img {
+  height: 90px;
+  overflow: hidden;
+}
+.section_detail_project .element_detail .slider_detail .slider_img_nav .item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section_detail_project .element_sidebar_detail {
+  width: 34%;
+}
