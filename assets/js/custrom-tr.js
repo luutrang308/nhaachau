@@ -218,7 +218,7 @@ $(document).ready(function() {
     if ($('li.hightline').hasClass('active')) {
       $('li.hightline .list_submenu li').not($(this)).removeClass('active');
     }
-    $(this).addClass('active_hightline');
+    $(this).toggleClass('active_hightline');
   });
 
   $('.header_main .main_menu > li.hightline').click(function(event) {
