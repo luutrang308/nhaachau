@@ -3067,7 +3067,7 @@ a:hover {
 }
 
 .section_popup.removepopup {
-  display: none;
+  display: none !important;
 }
 
 .section_popup {
@@ -3077,7 +3077,7 @@ a:hover {
   top: 0;
   left: 0;
   background: rgba(16, 16, 16, 0.5);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 10000;
@@ -3091,7 +3091,7 @@ a:hover {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.section_popup .element_popup .close_btn {
+.section_popup .element_popup .close_btn_popup {
   position: absolute;
   top: 15px;
   right: 5px;
@@ -3102,20 +3102,20 @@ a:hover {
   padding-top: 16px;
   text-align: center;
 }
-.section_popup .element_popup .close_btn:hover {
+.section_popup .element_popup .close_btn_popup:hover {
   cursor: pointer;
 }
-.section_popup .element_popup .close_btn span {
+.section_popup .element_popup .close_btn_popup span {
   display: block;
   width: 15px;
   height: 2px;
   background: #fff;
   margin: -2px auto;
 }
-.section_popup .element_popup .close_btn span:nth-child(1) {
+.section_popup .element_popup .close_btn_popup span:nth-child(1) {
   transform: rotateZ(45deg);
 }
-.section_popup .element_popup .close_btn span:nth-child(2) {
+.section_popup .element_popup .close_btn_popup span:nth-child(2) {
   transform: rotateZ(-45deg);
 }
 .section_popup .element_popup .img {

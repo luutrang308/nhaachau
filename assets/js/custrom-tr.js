@@ -239,9 +239,13 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
-  $('.close_btn').click(function() {
+  $('.close_btn_popup').click(function() {
     $('.section_popup').addClass('removepopup');
   });
+
+  
+  setTimeout(function(){
+    $('.section_popup').css('display','flex');
+  },15000);
     
 });
-

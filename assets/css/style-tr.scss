@@ -3350,7 +3350,7 @@ a {
 }
 
 .section_popup.removepopup {
-	display: none;
+	display: none !important;
 }
 
 .section_popup {
@@ -3360,7 +3360,7 @@ a {
 	top: 0;
 	left: 0;
 	background: rgba(16, 16, 16, 0.5);
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
     z-index: 10000;
@@ -3372,7 +3372,7 @@ a {
 	    display: flex;
 	    flex-flow: row wrap;
 	    justify-content: space-between;
-	    .close_btn {
+	    .close_btn_popup {
 	    	position: absolute;
 	    	top: 15px;
 	    	right: 5px;
