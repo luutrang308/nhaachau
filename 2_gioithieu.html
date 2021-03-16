@@ -498,6 +498,84 @@
     </div>
 </div>
 
+<div class="section_testimonial">
+    <div class="container">
+        <div class="row">
+           
+            <div class="slider_testimonial_tran">
+                <div class="img_prev">
+                    <img src="./assets/img/l.png" alt="">
+                </div>
+                <div class="img_next">
+                    <img src="./assets/img/r.png" alt="">
+                </div>
+
+                <div class="main_slide_tran">
+                    <div class="item top_item">
+                        <div class="img">
+                            <img src="./assets/img/test1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <p>Nhà  Á  Châu Thiết kế mội thất cho chúng tôi, tôi rất hài lòng. Đội ngũ kỹ sư tư vấn nhiệt tình, nhiều kinh nghiệm...</p>
+                                <p><strong>Nguyen Van A</strong></p>
+                                <p>CEO ACB Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="./assets/img/test2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <p>Nhà  Á  Châu Thiết kế mội thất cho chúng tôi, tôi rất hài lòng. Đội ngũ kỹ sư tư vấn nhiệt tình, nhiều kinh nghiệm...</p>
+                                <p><strong>Nguyen Van A</strong></p>
+                                <p>CEO ACB Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="./assets/img/test3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <p>Nhà  Á  Châu Thiết kế mội thất cho chúng tôi, tôi rất hài lòng. Đội ngũ kỹ sư tư vấn nhiệt tình, nhiều kinh nghiệm...</p>
+                                <p><strong>Nguyen Van A</strong></p>
+                                <p>CEO ACB Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <script>
+                function getCSS(element) { 
+                var css_data = ''; 
+                var css_obj = getComputedStyle(element); 
+
+                for (var i = 0; i < css_obj.length; i++) { 
+                    css_data += 
+                        css_obj[i] + ':' +  
+                        css_obj.getPropertyValue(css_obj[i]) 
+                        + ';<br>'; 
+                } 
+                document.getElementById('top_item') 
+                        .innerHTML = css_data; 
+                return; 
+              } 
+            </script>
+            <button onclick="getCSS(document.getElementById('srcDiv'))"> 
+                Get CSS 
+            </button> 
+            <div id="resDiv"></div> 
+        </div>
+    </div>
+</div>
+
 <div class="section_partner">
     <div class="container">
         <div class="row">
