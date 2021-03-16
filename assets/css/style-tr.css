@@ -1093,6 +1093,8 @@ a:hover {
   padding: 60px 0 85px 0;
   overflow: hidden;
   background-image: url(./../img/bgkh.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slider_partner {
@@ -3807,6 +3809,9 @@ a:hover {
   width: 100%;
 }
 
+.list_news_sidebar {
+  display: inline-block;
+}
 .list_news_sidebar .hotnews_box {
   width: 100%;
   float: left;

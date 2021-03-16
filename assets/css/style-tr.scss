@@ -1139,6 +1139,8 @@ a {
 	padding: 60px 0 85px 0;
 	overflow: hidden;
 	background-image: url(./../img/bgkh.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .slider_partner {
@@ -4098,6 +4100,7 @@ a {
 }
 
 .list_news_sidebar {
+	display: inline-block;
 	.hotnews_box {
 	    width: 100%;
 	    float: left;

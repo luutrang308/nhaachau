@@ -995,6 +995,63 @@
   .section_thankyou {
     padding: 60px 0 0 0;
   }
+  /* slider testimonial */
+  .section_testimonial .carousel .slides .slideItem > a {
+    object-fit: cover !important;
+    display: block !important;
+    position: absolute !important;
+    top: 40px !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    right: 15px !important;
+  }
+  .carousel .slides .slideItem .content {
+    height: 100% !important;
+    width: 100% !important;
+    float: left !important;
+    padding: 25px 0 !important;
+    position: inherit !important;
+    right: 0 !important;
+  }
+  .carousel .slides .slideItem .content .text {
+    background: #003925 !important;
+    float: left !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 125px 15px 0px 14px !important;
+    position: relative !important;
+  }
+  .carousel .slides .slideItem .content:before {
+    display: none !important;
+  }
+  .carousel .slides .slideItem .content .text:before {
+    left: 15px;
+  }
+  .carousel .slides .slideItem .content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .section_testimonial .carousel .slides {
+    width: 100% !important;
+    height: 400px !important;
+  }
+  .carousel .nextButton {
+    right: 0 !important;
+  }
+  .carousel .prevButton {
+    left: 0 !important;
+  }
+  .section_testimonial .carousel {
+    margin-top: 0 !important;
+  }
+  .section_partner , .section_footer_mobi {
+    padding-top: 0;
+  }
 }
 
 
@@ -1008,8 +1065,9 @@
 /* slider testimonial */
 .carousel {
   position : relative;
-  margin : 150px auto;
-  width : 930px;
+  margin : auto;
+  margin-top: 70px;
+  width : 100%;
   height : auto;
   border : none;
   overflow : visible;
@@ -1022,6 +1080,9 @@
   list-style : none;
   position : relative;
   overflow : visible;
+  width: 90% !important;
+  height: 400px !important;
+  margin: auto;
 }
 
 .carousel .slides .slideItem {
@@ -1031,8 +1092,128 @@
   padding : 0;
   margin : 0;
   border : none;
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  right: 0 !important;
+}
+.carousel .slides .slideItem .content {
+  height: 100%;
+  width: 55%;
+  float: left;
+  padding: 25px 0;
+  position: absolute;
+  right: 0;
+}
+.carousel .slides .slideItem .content:before {
+  position: absolute;
+  content: '';
+  background: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+.carousel .slides .slideItem .content .text {
+  background: #003925;
+  width: 50%;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 120px 50px 50px 50px;
+  position: relative;
+}
+.carousel .slides .slideItem .content p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150.36%;
+  color: #FFFFFF;
+  position: relative;
+}
+.carousel .slides .slideItem .content .text:before {
+  position: absolute;
+  content: url(./../img/ghichu.png);
+  top: 50px;
+  left: 50px;
+}
+.carousel .slides .slideItem .content .text:after {
+  position: absolute;
+  content: url(./../img/logomo.png);
+  right: 10px;
+  bottom: 10px;
+}
+.carousel .slides .slideItem .content p
+ strong {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150.36%;
+    color: #FFFFFF;
+ }
+
+.slideItem .gradient , .slideItem .reflection {
+  display: none !important;
+}
+.carousel .slides .slideItem:nth-child(1) {
+  width: 90% !important;
+  top: 54px;
+  right: 0;
+  opacity: 1;
+  z-index: 4;
+  display: block;
+}
+.carousel .slides .slideItem:nth-child(2) {
+  width: 95% !important;
+  top: 73.2px;
+  right: 60px;
+  opacity: 0;
+  z-index: 3;
+  display: none;
 }
 
+.carousel .slides .slideItem:nth-child(3) {
+  width: 100% !important;
+  top: 73.2px;
+  right: 120px;
+  opacity: 0;
+  z-index: 3;
+  display: none;
+}
+.carousel .slides .slideItem:nth-child(4) {
+  width: 90% !important;
+  top: 54px;
+  right: 0;
+  opacity: 1;
+  z-index: 4;
+  display: block;
+}
+.carousel .slides .slideItem:nth-child(5) {
+  width: 90% !important;
+  top: 30px;
+  right: 473px;
+  opacity: 1;
+  z-index: 5;
+  display: block;
+}
+.carousel .slides .slideItem:nth-child(6) {
+  width: 95% !important;
+  top: 30px;
+  right: 137px;
+  opacity: 1;
+  z-index: 5;
+  display: block;
+}
+.carousel .slides .slideItem:nth-child(7) {
+  width: 85% !important;
+  right: 137px;
+  opacity: 1;
+  z-index: 5;
+  display: block;
+}
 .carousel .slides .slideItem a {
   display: block;
   text-decoration : none;
@@ -1040,14 +1221,18 @@
   padding : 0;
   border : none;
   outline : none;
+  width: 50% !important;
+  height: 100% !important;
+  float: left;
 }
 
 .carousel .slides .slideItem img {
-  margin : 0;
-  padding : 0;
-  border : none;
-  width : 100%;
-  height : 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
 
 .carousel .nextButton {
@@ -1055,8 +1240,8 @@
   right : 10px;
   top : 133px;
   width : 35px;
-  height : 35px;
-  background : url("./../img/r.png") no-repeat center;
+  height : 78px;
+  background : url("./../img/right.png") no-repeat center;
   cursor : pointer;
   z-index : 9999;
 }
@@ -1066,8 +1251,8 @@
   left : 10px;
   top : 133px;
   width : 35px;
-  height: 35px;
-  background : url("./../img/l.png");
+  height: 78px;
+  background : url("./../img/left.png");
   cursor : pointer;
   z-index : 9999;
 }
@@ -1111,16 +1296,36 @@
 }
 
 
-.carousel .shadow {
-  width : 100%;
-  height : 82px;
+.carousel .slides .slideItem > a {
+  object-fit: cover;
+  display: block;
+}
+/*.carousel .slides .slideItem:nth-child(1) > a {
+  width: 256px;
+  height: 192px;
+}
+.carousel .slides .slideItem:nth-child(2) > a  {
+  width: 204.8px;
+  height: 153.6px;
 }
 
-.carousel .shadow .shadowLeft {
-  width : 100px;
-  height : 82px;
-  
- /* -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; 
- filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale);  */
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; 
- filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale); 
+.carousel .slides .slideItem:nth-child(3) > a  {
+  width: 204.8px;
+  height: 153.6px;
+}
+.carousel .slides .slideItem:nth-child(4) > a  {
+  width: 256px;
+  height: 192px;
+}
+.carousel .slides .slideItem:nth-child(5) > a  {
+  width: 320px;
+  height: 240px;
+}
+.carousel .slides .slideItem:nth-child(6) > a  {
+  width: 400px;
+  height: 300px;
+}
+.carousel .slides .slideItem:nth-child(7) > a  {
+  width: 320px;
+  height: 240px;
+}*/
