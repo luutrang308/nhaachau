@@ -1052,6 +1052,15 @@
   .section_partner , .section_footer_mobi {
     padding-top: 0;
   }
+  .element_news .item_news .img {
+    height: 240px;
+  }
+  .element_new_news {
+    margin-top: 0;
+  }
+  .section_new_news .title_black h2 {
+    margin-top: 0;
+  }
 }
 
 

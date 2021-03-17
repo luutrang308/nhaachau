@@ -174,13 +174,6 @@ $(document).ready(function() {
         slidesToShow: 2,
         slidesToScroll: 2
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
     }
     ]
   });
@@ -256,19 +249,6 @@ $(document).ready(function() {
     $('.main_slide_tran .item').not($(this)).removeClass('top_item');
   });
 
-  function getCSS(element) { 
-    var css_data = ''; 
-    var css_obj = getComputedStyle(element); 
-
-    for (var i = 0; i < css_obj.length; i++) { 
-        css_data += 
-            css_obj[i] + ':' +  
-            css_obj.getPropertyValue(css_obj[i]) 
-            + ';<br>'; 
-    } 
-    document.getElementById('top_item') 
-            .innerHTML = css_data; 
-    return; 
-  } 
+  
 
 });

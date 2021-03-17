@@ -2252,7 +2252,7 @@ a:hover {
 .element_news_main .item_news .img {
   display: block;
   overflow: hidden;
-  height: 240px;
+  height: 240px !important;
 }
 .element_news_main .item_news .img img {
   width: 100%;
